@@ -1,4 +1,4 @@
-import Header from "../components/Home/Header";
+import Header from "../components/Home/FirstSection";
 import CategoryCards from "../components/Home/CategoryCards";
 
 function Home() {
