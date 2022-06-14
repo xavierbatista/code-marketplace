@@ -1,0 +1,16 @@
+import Header from "../components/Home/Header";
+import CategoryCards from "../components/Home/CategoryCards";
+
+function Home() {
+  return (
+    <main>
+      <Header />
+      <CategoryCards />
+      {/* <div className="bg-neutral-900">
+        <div className="container"></div>
+      </div> */}
+    </main>
+  );
+}
+
+export default Home;

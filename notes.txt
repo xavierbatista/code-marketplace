@@ -1,0 +1,36 @@
+Navbar:
+    -dropdown menu looks ugly
+    -replace icons with icons i didn't find off of google images
+    -make mobile menu icon actually work using JS
+    -make sure that the settings for the search bar is the same when you resize the page
+    -make the icons based on the size of their parent
+    -doesnt appear on home page
+Home:
+    -The heading should move closer to the top when the screen sizes get smaller
+    Cards:
+        -one card should take up the entire width of the screen on mobile
+        -only show 6 cards (the ones with the most sales)
+        -have a button under the 6 card that says "View all technologies"
+
+Category cards:
+    -Make sure that the captions on the products cards are overflow hidden
+
+Categories I'm considering:
+    -React
+    -HTML & CSS
+    -PHP
+    -JavaScript
+    -TypeScript
+    -Python
+    -JavaScript
+    -Angular
+    -Vue
+    -Rust
+    -C# (or maybe .NET. I don't really understand the .NET ecosystem)
+    -C++
+    -Go
+    -Ccd 
+    -Wordpress
+
+
+    

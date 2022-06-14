@@ -1,0 +1,21 @@
+//HOMEPAGE SEARCHBAR
+function Searchbar() {
+  return (
+    <form
+      action=""
+      className="text-black text-base flex justify-center items-center w-full mt-9 lg:mt-12"
+    >
+      <input
+        type="text"
+        placeholder="e.g. HTML template"
+        className="w-full h-14 px-5 outline-none rounded-l-md rounded-r-none"
+      />
+      <button className="bg-red-600 h-full rounded-r-md flex items-center justify-center px-9 lg:px-12">
+        <div className="flex items-center justify-center h-14">
+          <p>Search</p>
+        </div>
+      </button>
+    </form>
+  );
+}
+export default Searchbar;
