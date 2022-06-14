@@ -7,7 +7,7 @@ function Header() {
       <div className="container py-12 lg:py-64 flex items-center justify-center lg:justify-between text-center lg:text-left flex-col lg:flex-row">
         <div className="max-w-2xl">
           <h1 className="text-4xl lg:text-6xl font-extrabold">
-            Make web development easy..
+            Make web development easy.
           </h1>
           <h2 className="text-base mt-3 lg:mt-4 mb-5 text-neutral-300">
             Choose from neatly made code, components, templates, and more made
