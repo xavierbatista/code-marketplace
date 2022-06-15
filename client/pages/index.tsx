@@ -6,9 +6,6 @@ function Home() {
     <main>
       <FirstSection />
       <CategoryCards />
-      {/* <div className="bg-neutral-900">
-        <div className="container"></div>
-      </div> */}
     </main>
   );
 }
