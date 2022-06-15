@@ -1,10 +1,10 @@
-import Header from "../components/Home/FirstSection";
+import FirstSection from "../components/Home/FirstSection";
 import CategoryCards from "../components/Home/CategoryCards";
 
 function Home() {
   return (
     <main>
-      <Header />
+      <FirstSection />
       <CategoryCards />
       {/* <div className="bg-neutral-900">
         <div className="container"></div>
