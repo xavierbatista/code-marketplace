@@ -13,14 +13,14 @@ function SubcategoryCards() {
   return (
     <div>
       <div className="flex justify-between mb-2">
-        <Link href="/">
+        <Link href="#">
           <a>
             <h2 className="text-xl font-semibold inline-block hover:text-neutral-400">
               Subcategory
             </h2>
           </a>
         </Link>
-        <Link href="/">
+        <Link href="#">
           <a className="mt-auto text-sm hover:text-neutral-400">View all ➤</a>
         </Link>
       </div>

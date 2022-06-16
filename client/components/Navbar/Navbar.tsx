@@ -26,28 +26,28 @@ function Navbar() {
         </div> */}
         <ul className="hidden sm:flex items-center whitespace-nowrap space-x-8">
           <li>
-            <Link href="/">
+            <Link href="#">
               <a className="hover:text-neutral-400">Start Selling</a>
             </Link>
           </li>
           {/* <li>
-            <Link href="/">
+            <Link href='#'>
               <a className="hover:text-neutral-400">Account</a>
             </Link>
           </li> */}
           <li>
-            <Link href="/">
+            <Link href="#">
               <a className="hover:text-neutral-400">Sign Up</a>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="#">
               <a className="hover:text-neutral-400">Sign In</a>
             </Link>
           </li>
           <li>
             <div className="w-8">
-              <Link href="/">
+              <Link href="#">
                 <a className="p-0 flex justify-center items-center">
                   <Image
                     src="/cartIcon.png"

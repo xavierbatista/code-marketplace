@@ -15,7 +15,7 @@ function ProductCard({ caption }: any) {
         </div>
       </div>
       <div className="bg-neutral-900 rounded-b-md py-2">
-        <Link href="/">
+        <Link href="#">
           <a>
             <p className="text-sm ml-4 inline-block">{caption}</p>
           </a>

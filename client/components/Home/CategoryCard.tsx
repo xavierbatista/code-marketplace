@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function CategoryCard({ caption, img, href }: any) {
   return (
-    <Link href={href || "/"}>
+    <Link href={href || '#'}>
       <a>
         <div className="flex justify-center items-center rounded-t-md aspect-video bg-neutral-800">
           <div className="max-h-[70%] max-w-[70%]">

@@ -4,7 +4,7 @@ function Custom404() {
   return (
     <>
       <h1>Sorry, that page doesnt exist.</h1>
-      <Link href="/">
+      <Link href="#">
         <a>Home</a>
       </Link>
     </>
