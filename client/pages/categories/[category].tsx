@@ -32,7 +32,7 @@ function Category() {
       </div>
       <div className="mx-auto max-w-[90rem] py-6 px-4">
         <h2 className="text-xl font-semibold mb-2">Categories in Category</h2>
-        <ul className="py-10 p-4 bg-neutral-900 rounded-md grid grid-cols-5 text-sm gap-4 whitespace-nowrap max-h-64 overflow-y-hidden">
+        <ul className="py-10 p-4 bg-neutral-900 rounded-md grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 text-sm gap-2 whitespace-nowrap max-h-64 overflow-y-hidden">
           {subcategories.map((category, i) => {
             return (
               <li key={i}>
