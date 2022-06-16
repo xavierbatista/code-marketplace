@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function ProductCard() {
+function ProductCard({ caption }: any) {
   return (
     <div>
       <div className="flex justify-center items-center rounded-t-md aspect-video bg-neutral-800">
@@ -17,7 +17,7 @@ function ProductCard() {
       <div className="bg-neutral-900 rounded-b-md py-2">
         <Link href="/">
           <a>
-            <p className="text-sm ml-4 inline-block">Cool HTML templates</p>
+            <p className="text-sm ml-4 inline-block">{caption}</p>
           </a>
         </Link>
         <p className="ml-4 text-xs text-neutral-400">
