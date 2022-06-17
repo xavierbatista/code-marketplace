@@ -27,10 +27,10 @@ function Search() {
         </h1>
       </div>
       <div className="flex mx-auto max-w-[90rem] pb-6 px-4">
-        <div className="w-48 shrink-0 bg-neutral-800 h-96 mr-12 rounded-md p-4">
+        <div className="w-48 shrink-0 bg-neutral-800 h-96 mr-12 rounded-md p-4 hidden xl:inline-block">
           Stuff
         </div>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="w-full grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {products.map((product, i) => {
             return <ProductCard caption={product} key={i} />;
           })}
