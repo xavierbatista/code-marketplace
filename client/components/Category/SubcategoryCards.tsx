@@ -29,7 +29,7 @@ function SubcategoryCards() {
           if (i < 3) return <ProductCard caption={product} key={i} />;
           else if (i === 3)
             return (
-              <span className="contents md:hidden xl:contents">
+              <span className="contents md:hidden xl:contents" key={i}>
                 <ProductCard caption={product} />
               </span>
             );

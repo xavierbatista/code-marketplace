@@ -3,15 +3,14 @@ import Image from "next/image";
 
 function CategoryCard({ caption, img, href }: any) {
   return (
-    <Link href={href || '#'}>
+    <Link href={href || "#"}>
       <a>
         <div className="flex justify-center items-center rounded-t-md aspect-video bg-neutral-800">
-          <div className="max-h-[70%] max-w-[70%]">
+          <div className="max-h-[70%] max-w-[70%] h-full w-full relative">
             <Image
               src={img || "/categoryLogos/react.png"}
               alt="Category image"
-              width={1280}
-              height={720}
+              layout="fill"
             />
           </div>
         </div>

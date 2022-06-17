@@ -4,16 +4,19 @@ import Link from "next/link";
 function ProductCard({ caption }: any) {
   return (
     <div>
-      <div className="flex justify-center items-center rounded-t-md aspect-video bg-neutral-800">
-        <div className="max-h-[70%] max-w-[70%] relative">
-          <Image
-            src={"/categoryLogos/react.png"}
-            alt="Category image"
-            width={1280}
-            height={720}
-          />
-        </div>
-      </div>
+      <Link href="#">
+        <a>
+          <div className="flex justify-center items-center rounded-t-md aspect-video bg-neutral-800">
+            <div className="max-h-[70%] max-w-[70%] h-full w-full relative">
+              <Image
+                src={"/categoryLogos/react.png"}
+                alt="Category image"
+                layout="fill"
+              />
+            </div>
+          </div>
+        </a>
+      </Link>
       <div className="bg-neutral-900 rounded-b-md py-2">
         <Link href="#">
           <a>
