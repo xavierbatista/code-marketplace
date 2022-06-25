@@ -57,8 +57,8 @@ function Navbar() {
             </div>
           </li>
         </ul>
-        <button className="sm:hidden flex justify-center items-center">
-          <Image src="/menuIcon.png" alt="Logo" width={25} height={20} />
+        <button className="sm:hidden w-7 h-6 relative">
+          <Image src="/menuIcon.png" alt="Logo"  layout="fill" />
         </button>
       </nav>
       {/* <div className="lg:hidden mb-3 flex justify-center align-middle">
