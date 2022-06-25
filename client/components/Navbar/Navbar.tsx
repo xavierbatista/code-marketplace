@@ -8,8 +8,8 @@ function Navbar() {
       <nav className="flex justify-between items-center max-w-[90rem] mx-auto h-16 text-sm px-4">
         <Link href="/">
           <a className="flex justify-center items-center">
-            <div className="w-8">
-              <Image src="/logo.png" alt="Logo" width={32} height={32} />
+            <div className="w-8 h-8 relative">
+              <Image src="/logo.png" alt="Logo" layout="fill" />
             </div>
             <div className="hidden sm:inline-block">
               <div className="text-xl ml-1 font-semibold leading-[1.1rem]">
@@ -48,13 +48,10 @@ function Navbar() {
           <li>
             <div className="w-8">
               <Link href="#">
-                <a className="p-0 flex justify-center items-center">
-                  <Image
-                    src="/cartIcon.png"
-                    alt="Logo"
-                    width={25}
-                    height={25}
-                  />
+                <a>
+                  <div className="w-7 h-7 relative">
+                    <Image src="/cartIcon.png" alt="Logo" layout="fill" />
+                  </div>
                 </a>
               </Link>
             </div>
