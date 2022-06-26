@@ -4,7 +4,7 @@ function signUp() {
   return (
     <div className="max-w-[38rem] mx-auto mt-24 px-4">
       {/* LOGO */}
-      <div className="flex justify-start items-center">
+      <div className="flex justify-start items-center select-none">
         <div className="w-8 h-8 relative">
           <Image src="/logo.png" alt="Logo" layout="fill" />
         </div>
@@ -24,9 +24,9 @@ function signUp() {
         </h1>
         <form action="" className="flex justify-start flex-col">
           <label htmlFor="">Email</label>
-          <input type="text" className="rounded-md" />
+          <input type="text" className="rounded-md text-black" />
           <label htmlFor="">Password</label>
-          <input type="text" className="rounded-md" />
+          <input type="text" className="rounded-md text-black" />
           <button className="bg-red-600 py-4 rounded-md">
             Create an account
           </button>

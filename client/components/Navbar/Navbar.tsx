@@ -7,7 +7,7 @@ function Navbar() {
     <header className="sticky z-10 top-0 border-b border-b-white/10 bg-[#0e0e0e] backdrop-blur-lg bg-opacity-90">
       <nav className="flex justify-between items-center max-w-[90rem] mx-auto h-16 text-sm px-4">
         <Link href="/">
-          <a className="flex justify-center items-center">
+          <a className="flex justify-center items-center select-none">
             <div className="w-8 h-8 relative">
               <Image src="/logo.png" alt="Logo" layout="fill" />
             </div>
