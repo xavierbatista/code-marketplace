@@ -10,7 +10,7 @@ function Searchbar() {
       <input
         type="text"
         placeholder="e.g. HTML template"
-        className="w-full h-14 px-5 outline-none rounded-l-md rounded-r-none"
+        className="w-full h-14 px-5 rounded-l-md rounded-r-none"
       />
       <Link href="/search">
         <a>

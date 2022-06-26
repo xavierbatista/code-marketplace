@@ -17,6 +17,10 @@ body {
   background-color: #131313;
 }
 
+input {
+  outline: none;
+}
+
 @layer components {
   .container {
     @apply max-w-[90rem] mx-auto px-4 py-28;

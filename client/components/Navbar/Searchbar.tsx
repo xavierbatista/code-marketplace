@@ -10,7 +10,7 @@ function Searchbar() {
       <input
         type="text"
         placeholder="e.g. HTML template"
-        className="w-full h-10 pl-5 outline-none rounded-l-full border-r-neutral-200 border"
+        className="w-full h-10 pl-5 rounded-l-full border-r-neutral-200 border"
       />
       <button className="bg-gray-100 h-full rounded-r-full px-4 flex items-center justify-center">
         <div className="w-8 flex items-center justify-center h-10">
