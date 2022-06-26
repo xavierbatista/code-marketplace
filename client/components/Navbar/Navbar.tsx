@@ -36,12 +36,12 @@ function Navbar() {
             </Link>
           </li> */}
           <li>
-            <Link href="#">
+            <Link href="/sign-up">
               <a className="hover:text-neutral-400">Sign Up</a>
             </Link>
           </li>
           <li>
-            <Link href="#">
+            <Link href="/sign-in">
               <a className="hover:text-neutral-400">Sign In</a>
             </Link>
           </li>
@@ -58,7 +58,7 @@ function Navbar() {
           </li>
         </ul>
         <button className="sm:hidden w-7 h-6 relative">
-          <Image src="/menuIcon.png" alt="Logo"  layout="fill" />
+          <Image src="/menuIcon.png" alt="Logo" layout="fill" />
         </button>
       </nav>
       {/* <div className="lg:hidden mb-3 flex justify-center align-middle">
