@@ -2,7 +2,7 @@ import CategoryCard from "./CategoryCard";
 
 function CategoryCards() {
   return (
-    <div className="container">
+    <section className="container">
       <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         <CategoryCard
           caption="HTML & CSS"
@@ -24,7 +24,11 @@ function CategoryCards() {
           img="/categoryLogos/react.png"
           href="/categories/react"
         />
-        <CategoryCard caption="Vue" img="/categoryLogos/vue.png" href="/categories/vue" />
+        <CategoryCard
+          caption="Vue"
+          img="/categoryLogos/vue.png"
+          href="/categories/vue"
+        />
         <CategoryCard
           caption="Angular"
           img="/categoryLogos/angular.png"
@@ -38,7 +42,7 @@ function CategoryCards() {
           </a>
         </Link>
       </div> */}
-    </div>
+    </section>
   );
 }
 export default CategoryCards;

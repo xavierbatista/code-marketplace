@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cd ./client && npm run dev",
-    "push": "git commit -am \"stuff\" && git push"
+    "push": "git add . && git commit -m \"stuff\" && git push"
   },
   "repository": {
     "type": "git",
