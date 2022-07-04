@@ -24,21 +24,26 @@ function SignIn() {
           Sign in to your account
         </h1>
         <form action="" className="flex justify-start flex-col">
-          <label htmlFor="" className="mt-7">
+          <label htmlFor="" className="mt-7 text-sm">
             Email
           </label>
           <input type="text" className="rounded-md text-black h-12 px-5 mt-2" />
-          <label htmlFor="" className="mt-7">
-            Password
+          <label htmlFor="" className="mt-7 flex justify-between text-sm">
+            <p>Password</p>
+            <button className="text-red-400 text-sm">
+              Forgot your password?
+            </button>
           </label>
           <input type="text" className="rounded-md text-black h-12 px-5 mt-2" />
-          <button className="bg-red-600 py-4 rounded-md mt-7">Sign in</button>
+          <button className="bg-red-600 h-12 rounded-md mt-7 font-medium">
+            Sign in
+          </button>
         </form>
-        <p className="mt-7">
+        <p className="mt-7 text-sm">
           Don&apos;t have an account?
           <span> </span>
           <Link href="sign-up">
-            <a className="text-red-400">Sign up</a>
+            <a className="text-red-400 text-sm">Sign up</a>
           </Link>
         </p>
       </div>
