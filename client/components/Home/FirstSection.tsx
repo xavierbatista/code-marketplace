@@ -10,7 +10,8 @@ function FirstSection() {
             Code, components, templates, and more for your website
           </h1>
           <h2 className="text-base mt-3 lg:mt-4 mb-5 text-neutral-300">
-            Choose from neatly made code, components, templates, and more made in different languages and frameworks to use for your websites.
+            Choose from neatly made code, components, templates, and more made
+            using different languages and frameworks to use for your websites.
           </h2>
           <Searchbar />
         </div>

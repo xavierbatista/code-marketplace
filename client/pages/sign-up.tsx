@@ -39,7 +39,7 @@ function SignUp() {
         <p className="mt-7 text-sm">
           Have an account?
           <span> </span>
-          <Link href="sign-up">
+          <Link href="sign-in">
             <a className="text-red-400 text-sm">Sign in</a>
           </Link>
         </p>
