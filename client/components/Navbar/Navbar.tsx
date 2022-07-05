@@ -26,7 +26,7 @@ function Navbar() {
         </div> */}
         <ul className="hidden sm:flex items-center whitespace-nowrap space-x-8">
           <li>
-            <Link href="start-selling">
+            <Link href="/start-selling">
               <a className="hover:text-neutral-400">Start Selling</a>
             </Link>
           </li>

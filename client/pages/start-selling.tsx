@@ -1,20 +1,23 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function StartSelling() {
   return (
     <main>
       <section className="bg-neutral-900">
         <div className="container py-12 lg:py-64 flex items-center justify-center lg:justify-between text-center lg:text-left flex-col lg:flex-row">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl flex flex-col items-center lg:items-start">
             <h1 className="text-3xl lg:text-5xl font-extrabold">
               Code, upload, and start selling
             </h1>
             <h2 className="text-base mt-3 lg:mt-4 mb-5 text-neutral-300">
               Make money doing what you love and yeah
             </h2>
-            <button className="bg-red-600 rounded-md h-14 max-w-sm w-full">
-              Start selling
-            </button>
+            <Link href="#">
+              <a className="bg-red-600 rounded-md h-14 max-w-sm w-full mt-7 lg:mt-10 flex items-center justify-center">
+                <p>Start selling</p>
+              </a>
+            </Link>
           </div>
           <div className="relative h-96 aspect-square ml-9 hidden lg:inline-block">
             <Image src="/homepageImage.png" alt="Preview" layout="fill" />

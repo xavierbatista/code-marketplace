@@ -65,15 +65,11 @@ function Category() {
           })}
         </ul>
       </div>
-      <div className="mx-auto max-w-[90rem] py-8 px-4">
-        <div className="flex flex-col space-y-16">
-          <SubcategoryCards />
-          <SubcategoryCards />
-          <SubcategoryCards />
-          <SubcategoryCards />
-          <SubcategoryCards />
-        </div>
-      </div>
+      <SubcategoryCards />
+      <SubcategoryCards />
+      <SubcategoryCards />
+      <SubcategoryCards />
+      <SubcategoryCards />
     </main>
   );
 }

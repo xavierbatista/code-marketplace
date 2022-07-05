@@ -5,7 +5,7 @@ function FirstSection() {
   return (
     <section className="bg-neutral-900">
       <div className="container py-12 lg:py-64 flex items-center justify-center lg:justify-between text-center lg:text-left flex-col lg:flex-row">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl flex flex-col items-center lg:items-start">
           <h1 className="text-3xl lg:text-5xl font-extrabold">
             Code, components, templates, and more for your website
           </h1>

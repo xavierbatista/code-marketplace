@@ -2,8 +2,15 @@ import "../styles/globals.css";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }: any) {
+  const router = useRouter();
+  const showHeader =
+    router.pathname === "/sign-in" || router.pathname === "/sign-up"
+      ? false
+      : true;
+
   return (
     <>
       <Head>
@@ -13,7 +20,7 @@ function MyApp({ Component, pageProps }: any) {
         <meta name="description" content="" />
         <title>Code Marketplace</title>
       </Head>
-      <Navbar />
+      {showHeader && <Navbar />}
       <Component {...pageProps} /> {/* The main webpage */}
       <Footer />
     </>
