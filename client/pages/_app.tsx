@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: any) {
         <title>Code Marketplace</title>
       </Head>
       {showHeader && <Navbar />}
-      <Component {...pageProps} /> {/* The main webpage */}
+      <Component {...pageProps} />
       <Footer />
     </>
   );

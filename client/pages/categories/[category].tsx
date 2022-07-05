@@ -13,9 +13,9 @@ import SubcategoriesList from "../../components/Category/SubcategoriesList";
 function Category() {
   return (
     <main>
-      <div className="mx-auto py-8 px-4 max-w-[90rem]">
-        <h1 className="text-5xl font-bold">Category</h1>
-      </div>
+      <h1 className="mx-auto py-8 px-4 max-w-[90rem] text-5xl font-bold">
+        Category
+      </h1>
       <SubcategoriesList />
       <SubcategoryPreview />
       <SubcategoryPreview />
