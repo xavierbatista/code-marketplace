@@ -56,7 +56,7 @@ function Category() {
             return (
               <li key={i}>
                 <Link href="#">
-                  <a className="rounded-md overflow-hidden h-12 flex justify-center bg-neutral-800">
+                  <a className="rounded-md overflow-hidden h-12 flex justify-center bg-neutral-700">
                     <p className="my-auto">{category}</p>
                   </a>
                 </Link>
