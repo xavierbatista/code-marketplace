@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import ProductCard from "../ProductCard";
 
-function SubcategoryCards() {
+function SubcategoryPreview() {
   const [products, setProducts] = useState([
     "Product name",
     "Product name",
@@ -39,4 +39,4 @@ function SubcategoryCards() {
     </div>
   );
 }
-export default SubcategoryCards;
+export default SubcategoryPreview;

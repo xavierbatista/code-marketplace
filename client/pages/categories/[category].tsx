@@ -7,69 +7,21 @@
 //   };
 // }
 
-import { useState } from "react";
-import Link from "next/link";
-import SubcategoryCards from "../../components/Category/SubcategoryCards";
+import SubcategoryPreview from "../../components/Category/SubcategoryPreview";
+import SubcategoriesList from "../../components/Category/SubcategoriesList";
 
 function Category() {
-  const [subcategories, setSubcategories] = useState([
-    "Template",
-    "Game",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-    "Other subcategory",
-  ]);
-
   return (
     <main>
       <div className="mx-auto py-8 px-4 max-w-[90rem]">
         <h1 className="text-5xl font-bold">Category</h1>
       </div>
-      <div className="mx-auto max-w-[90rem] py-8 px-4">
-        <h2 className="text-xl font-semibold mb-2">Categories in Category</h2>
-        <ul className="p-4 bg-neutral-900 rounded-md grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 text-sm gap-2 whitespace-nowrap max-h-64 overflow-y-auto">
-          {subcategories.map((category, i) => {
-            return (
-              <li key={i}>
-                <Link href="#">
-                  <a className="rounded-md overflow-hidden h-12 flex justify-center bg-neutral-700">
-                    <p className="my-auto">{category}</p>
-                  </a>
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-      <SubcategoryCards />
-      <SubcategoryCards />
-      <SubcategoryCards />
-      <SubcategoryCards />
-      <SubcategoryCards />
+      <SubcategoriesList />
+      <SubcategoryPreview />
+      <SubcategoryPreview />
+      <SubcategoryPreview />
+      <SubcategoryPreview />
+      <SubcategoryPreview />
     </main>
   );
 }

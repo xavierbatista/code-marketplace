@@ -26,11 +26,11 @@ function ProductCard({ caption }: any) {
         <p className="ml-4 text-xs text-neutral-400">
           by
           <Link href="#">
-            <a className="font-semibold hover:text-white"> user </a>
+            <a className="font-semibold"> user </a>
           </Link>
           in
           <Link href="#">
-            <a className="font-semibold hover:text-white"> category </a>
+            <a className="font-semibold"> category </a>
           </Link>
         </p>
       </div>
