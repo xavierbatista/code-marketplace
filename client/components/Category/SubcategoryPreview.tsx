@@ -11,7 +11,7 @@ function SubcategoryPreview() {
   ]);
 
   return (
-    <div className="mx-auto max-w-[90rem] py-8 px-4">
+    <section className="mx-auto max-w-[90rem] py-8 px-4">
       <div className="flex justify-between mb-2">
         <Link href="#">
           <a>
@@ -36,7 +36,7 @@ function SubcategoryPreview() {
           else return;
         })}
       </div>
-    </div>
+    </section>
   );
 }
 export default SubcategoryPreview;

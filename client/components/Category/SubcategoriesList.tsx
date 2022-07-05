@@ -35,7 +35,7 @@ function SubcategoriesList() {
   ]);
 
   return (
-    <div className="mx-auto max-w-[90rem] py-8 px-4">
+    <section className="mx-auto max-w-[90rem] py-8 px-4">
       <h2 className="text-xl font-semibold mb-2">Categories in Category</h2>
       <ul className="p-4 bg-neutral-900 rounded-md grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 text-sm gap-2 whitespace-nowrap max-h-64 overflow-y-auto">
         {subcategories.map((category, i) => {
@@ -50,7 +50,7 @@ function SubcategoriesList() {
           );
         })}
       </ul>
-    </div>
+    </section>
   );
 }
 export default SubcategoriesList;
