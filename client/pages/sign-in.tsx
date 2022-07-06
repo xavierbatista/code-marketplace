@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function SignIn() {
   return (
-    <div className="max-w-[34rem] mx-auto mt-24 px-4">
+    <div className="max-w-[34rem] mx-auto py-8 px-4">
       {/* LOGO */}
       <div className="flex justify-start items-center select-none">
         <div className="w-8 h-8 relative">
@@ -19,7 +19,7 @@ function SignIn() {
         </div>
       </div>
       {/* FORM */}
-      <div className="bg-neutral-800 mt-7 rounded-md p-14">
+      <div className="bg-neutral-800 mt-16 rounded-md p-14">
         <h1 className="text-2xl text-center font-medium">
           Sign in to your account
         </h1>
