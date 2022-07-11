@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: any) {
       </Head>
       {showHeader && <Navbar />}
       <Component {...pageProps} />
-      <Footer />
+      {showHeader && <Footer />}
     </>
   );
 }
