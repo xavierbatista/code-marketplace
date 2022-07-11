@@ -16,7 +16,7 @@ function Search() {
 
   return (
     <main>
-      <h1 className="mx-auto max-w-[90rem] py-8 px-4 text-5xl font-bold">
+      <h1 className="text-4xl lg:text-5xl mx-auto max-w-[90rem] py-8 px-4 font-bold">
         Search related words
       </h1>
       <div className="mx-auto max-w-[90rem] pt-8 pb-2 px-4 text-xl font-semibold">

@@ -13,7 +13,7 @@ import SubcategoriesList from "../../components/Category/SubcategoriesList";
 function Category() {
   return (
     <main>
-      <h1 className="mx-auto py-8 px-4 max-w-[90rem] text-5xl font-bold">
+      <h1 className="text-4xl lg:text-5xl mx-auto py-8 px-4 max-w-[90rem] font-bold">
         Category
       </h1>
       <SubcategoriesList />
