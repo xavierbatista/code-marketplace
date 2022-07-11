@@ -15,9 +15,7 @@ function SubcategoryPreview() {
       <div className="flex justify-between mb-2">
         <Link href="#">
           <a>
-            <h2 className="text-xl font-semibold inline-block">
-              Subcategory
-            </h2>
+            <h2 className="text-xl font-semibold inline-block">Subcategory</h2>
           </a>
         </Link>
         <Link href="#">
