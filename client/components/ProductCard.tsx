@@ -2,17 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 function ProductCard({ caption }: any) {
+  const NUM_OF_IMAGE = 7;
+  const img = `/sampleThumbnails/${Math.floor(
+    Math.random() * NUM_OF_IMAGE
+  )}.png`;
+
   return (
     <div>
       <Link href="#">
         <a>
-          <div className="flex justify-center items-center rounded-t-md aspect-video bg-neutral-800">
-            <div className="max-h-[70%] max-w-[70%] h-full w-full relative">
-              <Image
-                src={"/categoryLogos/react.png"}
-                alt="Category image"
-                layout="fill"
-              />
+          <div className="flex justify-center items-center aspect-video bg-neutral-800">
+            <div className="h-full w-full relative">
+              <Image src={img} alt="Category image" layout="fill" />
             </div>
           </div>
         </a>
