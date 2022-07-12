@@ -5,7 +5,7 @@ function Searchbar() {
   return (
     <form
       action=""
-      className="text-black text-base flex justify-center items-center w-full mt-7 lg:mt-10"
+      className="text-black text-base flex justify-center items-center w-full my-6 lg:mt-10"
     >
       <input
         type="text"

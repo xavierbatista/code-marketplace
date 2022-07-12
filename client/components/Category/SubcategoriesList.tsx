@@ -41,7 +41,7 @@ function SubcategoriesList() {
         {subcategories.map((category, i) => {
           return (
             <li key={i}>
-              <Link href="#">
+              <Link href="/search">
                 <a className="rounded-md overflow-hidden h-12 flex justify-center bg-neutral-700">
                   <p className="my-auto">{category}</p>
                 </a>

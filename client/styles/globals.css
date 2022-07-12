@@ -25,6 +25,6 @@ input {
 
 @layer components {
   .container {
-    @apply max-w-[90rem] mx-auto px-4 py-28;
+    @apply max-w-[90rem] mx-auto px-4 py-12 lg:py-28;
   }
 }

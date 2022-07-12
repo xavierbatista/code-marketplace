@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import ProductCard from "../ProductCard";
 
-function SubcategoryPreview() {
+function SubcategoryPreview({ subcategoryName }: any) {
   const [products, setProducts] = useState([
     "Product name",
     "Product name",
@@ -15,10 +15,12 @@ function SubcategoryPreview() {
       <div className="flex justify-between mb-2">
         <Link href="#">
           <a>
-            <h2 className="text-xl font-semibold inline-block">Subcategory</h2>
+            <h2 className="text-xl font-semibold inline-block">
+              {subcategoryName || "Subcategory"}
+            </h2>
           </a>
         </Link>
-        <Link href="#">
+        <Link href="/search">
           <a className="mt-auto text-sm">View all ➤</a>
         </Link>
       </div>

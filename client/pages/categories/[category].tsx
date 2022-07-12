@@ -17,11 +17,11 @@ function Category() {
         Category
       </h1>
       <SubcategoriesList />
-      <SubcategoryPreview />
-      <SubcategoryPreview />
-      <SubcategoryPreview />
-      <SubcategoryPreview />
-      <SubcategoryPreview />
+      <SubcategoryPreview subcategoryName="Trending" />
+      <SubcategoryPreview subcategoryName="Most Popular" />
+      <SubcategoryPreview subcategoryName="New" />
+      <SubcategoryPreview subcategoryName="Template" />
+      <SubcategoryPreview subcategoryName="Game" />
     </main>
   );
 }
