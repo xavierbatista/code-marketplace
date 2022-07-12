@@ -10,11 +10,11 @@ function StartSelling() {
             <h1 className="text-3xl lg:text-5xl font-extrabold">
               Code, upload, and start selling
             </h1>
-            <h2 className="text-base mt-3 lg:mt-4 mb-5 text-neutral-300">
-              Make money doing what you love and yeah
+            <h2 className="text-base my-3 lg:my-4 text-neutral-300">
+              Make a living doing what you love and yeah
             </h2>
             <Link href="#">
-              <a className="bg-red-600 rounded-md h-14 max-w-sm w-full mt-7 lg:mt-10 flex items-center justify-center">
+              <a className="bg-red-600 rounded-md h-14 max-w-sm w-full my-6 lg:mt-10 flex items-center justify-center">
                 <p>Start selling</p>
               </a>
             </Link>
@@ -22,7 +22,7 @@ function StartSelling() {
           <div className="relative h-96 aspect-square ml-9 hidden lg:inline-block">
             <Image src="/homepageImage.png" alt="Preview" layout="fill" />
           </div>
-          <div className="relative w-full max-w-2xl mt-10 aspect-[1088/653] lg:hidden">
+          <div className="relative w-full max-w-2xl mt-3 aspect-[1088/653] lg:hidden">
             <Image src="/homepageImage2.png" alt="Preview" layout="fill" />
           </div>
         </div>

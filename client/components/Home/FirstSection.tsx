@@ -18,7 +18,7 @@ function FirstSection() {
         <div className="relative h-96 aspect-square ml-9 hidden lg:inline-block">
           <Image src="/homepageImage.png" alt="Preview" layout="fill" />
         </div>
-        <div className="relative w-full max-w-2xl mt-6 aspect-[1088/653] lg:hidden">
+        <div className="relative w-full max-w-2xl mt-3 aspect-[1088/653] lg:hidden">
           <Image src="/homepageImage2.png" alt="Preview" layout="fill" />
         </div>
       </div>
