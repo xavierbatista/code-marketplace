@@ -9,6 +9,7 @@
 
 import SubcategoryPreview from "../../components/Category/SubcategoryPreview";
 import SubcategoriesList from "../../components/Category/SubcategoriesList";
+import { useRouter } from "next/router";
 
 function Category() {
   return (
