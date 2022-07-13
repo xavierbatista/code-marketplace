@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import MenuIcon from "../Icons/MenuIcon";
 import Searchbar from "./Searchbar";
 
 function Navbar() {
@@ -57,8 +58,8 @@ function Navbar() {
             </div>
           </li>
         </ul>
-        <button className="lg:hidden w-7 h-6 relative">
-          <Image src="/menuIcon.png" alt="Logo" layout="fill" />
+        <button className="lg:hidden">
+          <MenuIcon />
         </button>
       </nav>
       {/* <div className="lg:hidden mb-3 flex justify-center align-middle">
