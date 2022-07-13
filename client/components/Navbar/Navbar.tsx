@@ -11,7 +11,7 @@ function Navbar() {
             <div className="w-8 h-8 relative">
               <Image src="/logo.png" alt="Logo" layout="fill" />
             </div>
-            <div className="hidden sm:inline-block">
+            <div className="hidden lg:inline-block">
               <div className="text-xl ml-1 font-semibold leading-[1.1rem]">
                 Code
               </div>
@@ -24,7 +24,7 @@ function Navbar() {
         {/* <div className="hidden lg:contents">
           <Searchbar />
         </div> */}
-        <ul className="hidden sm:flex items-center whitespace-nowrap space-x-8">
+        <ul className="hidden lg:flex items-center whitespace-nowrap space-x-8">
           <li>
             <Link href="/start-selling">
               <a className="hover:text-neutral-400">Start Selling</a>
@@ -57,7 +57,7 @@ function Navbar() {
             </div>
           </li>
         </ul>
-        <button className="sm:hidden w-7 h-6 relative">
+        <button className="lg:hidden w-7 h-6 relative">
           <Image src="/menuIcon.png" alt="Logo" layout="fill" />
         </button>
       </nav>
