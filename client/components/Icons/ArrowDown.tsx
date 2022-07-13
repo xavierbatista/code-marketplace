@@ -6,7 +6,7 @@ function ArrowDown() {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
-      strokeWidth={3}
+      strokeWidth={2.8}
     >
       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
     </svg>
