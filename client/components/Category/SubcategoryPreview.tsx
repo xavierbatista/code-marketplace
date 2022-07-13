@@ -14,7 +14,7 @@ function SubcategoryPreview({ subcategoryName }: any) {
   return (
     <section className="mx-auto max-w-[90rem] py-8 px-4">
       <div className="flex justify-between mb-2">
-        <Link href="#">
+        <Link href="/search">
           <a>
             <h2 className="text-xl font-semibold inline-block">
               {subcategoryName || "Subcategory"}
