@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import ArrowRight from "../Icons/ArrowRight";
 import ProductCard from "../ProductCard";
 
 function SubcategoryPreview({ subcategoryName }: any) {
@@ -21,7 +22,10 @@ function SubcategoryPreview({ subcategoryName }: any) {
           </a>
         </Link>
         <Link href="/search">
-          <a className="mt-auto text-sm">View all ➤</a>
+          <a>
+            <span className="mt-auto text-sm mr-1">View all</span>
+            <ArrowRight />
+          </a>
         </Link>
       </div>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
