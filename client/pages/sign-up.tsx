@@ -19,7 +19,7 @@ function SignUp() {
         </div>
       </div>
       {/* FORM */}
-      <div className="bg-neutral-800 mt-16 rounded-md p-14">
+      <div className="bg-neutral-800 mt-16 rounded-md p-14 px-6 p-14 sm:px-14">
         <h1 className="text-2xl text-center font-medium">
           Create your account
         </h1>
@@ -27,11 +27,17 @@ function SignUp() {
           <label htmlFor="" className="mt-7 text-sm">
             Email
           </label>
-          <input type="text" className="rounded-md text-black h-12 px-5 mt-2" />
+          <input
+            type="text"
+            className="rounded-md text-black h-12 px-5 mt-2 outline-red-400 outline-2 focus:outline"
+          />
           <label htmlFor="" className="mt-7 text-sm">
             Password
           </label>
-          <input type="text" className="rounded-md text-black h-12 px-5 mt-2" />
+          <input
+            type="text"
+            className="rounded-md text-black h-12 px-5 mt-2 outline-red-400 outline-2 focus:outline"
+          />
           <button className="bg-red-600 h-12 rounded-md mt-7 font-medium">
             Create account
           </button>

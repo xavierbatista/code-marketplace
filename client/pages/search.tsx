@@ -29,14 +29,17 @@ function Search() {
       <h1 className="text-4xl lg:text-5xl mx-auto max-w-[90rem] py-8 px-4 font-bold">
         Search related words
       </h1>
-      <div className="mx-auto max-w-[90rem] pt-8 pb-2 px-4 font-semibold flex justify-between">
-        <button className="xl:text-xl font-semibold xl:cursor-default">
+      <div className="mx-auto max-w-[90rem] pt-8 pb-2 px-4 flex justify-between">
+        <div className="text-xl font-semibold hidden xl:inline-block">
+          Filters
+        </div>
+        <button className="xl:hidden">
           <span className="mr-1">Filters</span>
-          <span className="xl:hidden">
+          <span>
             <ArrowDown />
           </span>
         </button>
-        <button className="font-semibold">
+        <button className="">
           <span className="mr-1">Sort by</span>
           <ArrowDown />
         </button>
