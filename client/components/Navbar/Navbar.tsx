@@ -50,8 +50,8 @@ function Navbar() {
             <div className="w-8">
               <Link href="#">
                 <a>
-                  <div className="w-7 h-7 relative">
-                    <Image src="/cartIcon.png" alt="Logo" layout="fill" />
+                  <div className="w-7 h-6 relative">
+                    <Image src="/cartIcon.webp" alt="Logo" layout="fill" />
                   </div>
                 </a>
               </Link>
