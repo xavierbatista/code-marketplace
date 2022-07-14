@@ -38,7 +38,7 @@ function SignUp() {
             type="text"
             className="rounded-md text-black h-12 px-5 mt-2 outline-red-400 outline-2 focus:outline"
           />
-          <button className="bg-red-600 h-12 rounded-md mt-7 font-medium">
+          <button className="bg-red-600 h-12 rounded-md mt-7">
             Create account
           </button>
         </form>
