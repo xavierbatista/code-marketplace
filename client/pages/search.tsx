@@ -42,7 +42,7 @@ function Search() {
         </button>
       </div>
       <div className="flex mx-auto max-w-[90rem] pb-8 px-4">
-        <div className="w-52 h-[49rem] shrink-0 bg-neutral-800 mr-8 rounded-md p-4 hidden xl:inline-block"></div>
+        <aside className="w-52 h-[49rem] shrink-0 bg-neutral-800 mr-8 rounded-md p-4 hidden xl:inline-block"></aside>
         <div className="w-full grid sm:grid-cols-2 lg:grid-cols-3 gap-4 h-fit">
           {products.map((product, i) => {
             return <ProductCard caption={product} key={i} />;
