@@ -50,7 +50,7 @@ function Navbar() {
             <div className="w-8">
               <Link href="#">
                 <a>
-                  <div className="w-7 h-6 relative">
+                  <div className="w-7 h-6 relative hover:brightness-50">
                     <Image src="/cartIcon.webp" alt="Logo" layout="fill" />
                   </div>
                 </a>
