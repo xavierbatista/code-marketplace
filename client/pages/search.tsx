@@ -33,13 +33,13 @@ function Search() {
         <div className="text-xl font-semibold hidden xl:inline-block">
           Filters
         </div>
-        <button className="xl:hidden">
+        <button className="xl:hidden hover:brightness-[60%]">
           <span className="mr-1">Filters</span>
           <span>
             <ArrowDown />
           </span>
         </button>
-        <button className="">
+        <button className="hover:brightness-[60%]">
           <span className="mr-1">Sort by</span>
           <ArrowDown />
         </button>

@@ -23,8 +23,10 @@ function SubcategoryPreview({ subcategoryName }: any) {
         </Link>
         <Link href="/search">
           <a>
-            <span className="mt-auto text-sm mr-1">View all</span>
-            <ArrowRight />
+            <div className="hover:brightness-[60%]">
+              <span className="mt-auto text-sm mr-1">View all</span>
+              <ArrowRight />
+            </div>
           </a>
         </Link>
       </div>

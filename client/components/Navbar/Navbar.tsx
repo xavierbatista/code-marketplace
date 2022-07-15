@@ -47,7 +47,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <div className="w-8 hover:brightness-50">
+            <div className="w-8 hover:brightness-[60%]">
               <Link href="#">
                 <a>
                   <div className="w-7 h-6 relative">

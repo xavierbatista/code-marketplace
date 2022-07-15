@@ -38,7 +38,7 @@ function SignUp() {
             type="text"
             className="rounded-md text-black h-12 px-5 mt-2 outline-red-400 outline-2 focus:outline"
           />
-          <button className="bg-red-600 h-12 rounded-md mt-7">
+          <button className="bg-red-600 h-12 rounded-md mt-7 hover:brightness-[85%]">
             Create account
           </button>
         </form>
@@ -46,7 +46,9 @@ function SignUp() {
           Have an account?
           <span> </span>
           <Link href="sign-in">
-            <a className="text-red-400 text-sm">Sign in</a>
+            <a className="text-red-400 text-sm hover:brightness-[85%]">
+              Sign in
+            </a>
           </Link>
         </p>
       </div>
