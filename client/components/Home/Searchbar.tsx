@@ -14,7 +14,7 @@ function Searchbar() {
       />
       <Link href="/search">
         <a>
-          <button className="bg-red-600 rounded-r-md flex items-center justify-center px-9 lg:px-12 hover:brightness-[85%]">
+          <button className="bg-red-600 rounded-r-md flex items-center justify-center px-9 lg:px-12 hover:brightness-[75%]">
             <div className="flex items-center justify-center h-14">
               <p>Search</p>
             </div>

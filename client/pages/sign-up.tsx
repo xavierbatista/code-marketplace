@@ -29,16 +29,16 @@ function SignUp() {
           </label>
           <input
             type="text"
-            className="rounded-md text-black h-12 px-5 mt-2 outline-red-400 outline-2 focus:outline"
+            className="rounded-md text-black h-12 px-3 mt-2 outline-red-400 outline-2 focus:outline"
           />
           <label htmlFor="" className="mt-7 text-sm">
             Password
           </label>
           <input
             type="text"
-            className="rounded-md text-black h-12 px-5 mt-2 outline-red-400 outline-2 focus:outline"
+            className="rounded-md text-black h-12 px-3 mt-2 outline-red-400 outline-2 focus:outline"
           />
-          <button className="bg-red-600 h-12 rounded-md mt-7 hover:brightness-[85%]">
+          <button className="bg-red-600 h-12 rounded-md mt-7 hover:brightness-[75%]">
             Create account
           </button>
         </form>
@@ -46,7 +46,7 @@ function SignUp() {
           Have an account?
           <span> </span>
           <Link href="sign-in">
-            <a className="text-red-400 text-sm hover:brightness-[85%]">
+            <a className="text-red-400 text-sm hover:brightness-[75%]">
               Sign in
             </a>
           </Link>

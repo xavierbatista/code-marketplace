@@ -14,7 +14,7 @@ function StartSelling() {
               Make a living doing what you love and yeah
             </h2>
             <Link href="#">
-              <a className="bg-red-600 rounded-md h-14 max-w-sm w-full my-6 lg:mt-10 flex items-center justify-center hover:brightness-[85%]">
+              <a className="bg-red-600 rounded-md h-14 max-w-sm w-full my-6 lg:mt-10 flex items-center justify-center hover:brightness-[75%]">
                 <p>Start selling</p>
               </a>
             </Link>
