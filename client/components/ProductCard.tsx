@@ -11,7 +11,7 @@ function ProductCard({ caption }: any) {
     <div>
       <Link href="#">
         <a>
-          <div className="flex justify-center items-center aspect-video bg-neutral-800">
+          <div className="flex justify-center items-center aspect-video bg-neutral-800 hover:brightness-[75%]">
             <div className="h-full w-full relative">
               <Image src={img} alt="Category image" layout="fill" />
             </div>
@@ -21,7 +21,9 @@ function ProductCard({ caption }: any) {
       <div className="bg-neutral-900 rounded-b-md py-2">
         <Link href="#">
           <a>
-            <p className="text-sm ml-4 inline-block">{caption}</p>
+            <p className="text-sm ml-4 inline-block hover:brightness-[60%]">
+              {caption}
+            </p>
           </a>
         </Link>
         <p className="ml-4 text-xs text-neutral-400">
