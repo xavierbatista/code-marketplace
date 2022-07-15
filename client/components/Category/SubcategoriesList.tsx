@@ -42,7 +42,7 @@ function SubcategoriesList() {
           return (
             <li key={i}>
               <Link href="/search">
-                <a className="rounded-md overflow-hidden h-12 flex justify-center bg-neutral-700">
+                <a className="rounded-md overflow-hidden h-12 flex justify-center bg-neutral-700 hover:brightness-[75%]">
                   <p className="my-auto">{category}</p>
                 </a>
               </Link>

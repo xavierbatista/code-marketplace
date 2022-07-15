@@ -12,7 +12,7 @@ function Navbar() {
             <div className="w-8 h-8 relative">
               <Image src="/logo.png" alt="Logo" layout="fill" />
             </div>
-            <div className="hidden md:inline-block">
+            <div className="hidden lg:inline-block">
               <div className="text-xl ml-1 font-semibold leading-[1.1rem]">
                 Code
               </div>
@@ -22,28 +22,28 @@ function Navbar() {
             </div>
           </a>
         </Link>
-        {/* <div className="hidden md:contents">
+        {/* <div className="hidden lg:contents">
           <Searchbar />
         </div> */}
-        <ul className="hidden md:flex items-center whitespace-nowrap space-x-8">
+        <ul className="hidden lg:flex items-center whitespace-nowrap space-x-8">
           <li>
             <Link href="/start-selling">
-              <a className="hover:text-neutral-400">Start Selling</a>
+              <a className="hover:brightness-[60%]">Start Selling</a>
             </Link>
           </li>
           {/* <li>
             <Link href='#'>
-              <a className="hover:text-neutral-400">Account</a>
+              <a className="hover:brightness-[60%]">Account</a>
             </Link>
           </li> */}
           <li>
             <Link href="/sign-up">
-              <a className="hover:text-neutral-400">Sign Up</a>
+              <a className="hover:brightness-[60%]">Sign Up</a>
             </Link>
           </li>
           <li>
             <Link href="/sign-in">
-              <a className="hover:text-neutral-400">Sign In</a>
+              <a className="hover:brightness-[60%]">Sign In</a>
             </Link>
           </li>
           <li>
@@ -58,11 +58,11 @@ function Navbar() {
             </div>
           </li>
         </ul>
-        <button className="md:hidden">
+        <button className="lg:hidden hover:brightness-[60%]">
           <MenuIcon />
         </button>
       </nav>
-      {/* <div className="md:hidden mb-3 flex justify-center align-middle">
+      {/* <div className="lg:hidden mb-3 flex justify-center align-middle">
         <Searchbar />
       </div> */}
     </header>
