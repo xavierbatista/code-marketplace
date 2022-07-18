@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd ./client && npm run dev",
+    "dev": "cd ./client && npm run dev",
     "push": "git add . && git commit -m \"did stuff\" && git push"
   },
   "repository": {
