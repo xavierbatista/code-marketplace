@@ -1,6 +1,5 @@
-import { Pool } from "pg";
-require("dotenv").config();
-// import "dotenv/config"; //uncomment this if the above does not work
+import { Pool } from 'pg';
+import 'dotenv/config';
 
 const devConfig = {
   user: process.env.PG_USER,
