@@ -8,7 +8,7 @@ function StartSelling() {
         <div className="container py-12 lg:py-56 flex items-center justify-center lg:justify-between text-center lg:text-left flex-col lg:flex-row">
           <div className="max-w-2xl flex flex-col items-center lg:items-start">
             <h1 className="text-3xl lg:text-5xl font-extrabold">
-              Code, upload, and start selling
+              Code, upload, start selling
             </h1>
             <h2 className="text-base my-3 lg:my-4 text-neutral-300">
               Make a living doing what you love and yeah
