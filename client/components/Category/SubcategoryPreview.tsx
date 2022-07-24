@@ -16,7 +16,7 @@ function SubcategoryPreview({ subcategoryName }: any) {
       <div className="flex justify-between mb-2">
         <Link href="/search">
           <a>
-            <h2 className="text-xl font-semibold inline-block">
+            <h2 className="text-xl font-medium inline-block">
               {subcategoryName || "Subcategory"}
             </h2>
           </a>

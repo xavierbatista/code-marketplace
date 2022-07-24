@@ -1,27 +1,27 @@
-import { useState } from "react";
-import ArrowDown from "../components/Icons/ArrowDown";
-import ProductCard from "../components/ProductCard";
+import { useState } from 'react';
+import ArrowDown from '../components/Icons/ArrowDown';
+import ProductCard from '../components/ProductCard';
 
 function Search() {
   const [products, setProducts] = useState([
-    "Product name",
-    "Product name",
-    "Product name",
-    "Product name",
-    "Product name",
-    "Product name",
-    "Product name",
-    "Product name",
-    "Product name",
-    "Product name",
-    "Product name",
-    "Product name",
-    "Product name",
-    "Product name",
-    "Product name",
-    "Product name",
-    "Product name",
-    "Product name",
+    'Product name',
+    'Product name',
+    'Product name',
+    'Product name',
+    'Product name',
+    'Product name',
+    'Product name',
+    'Product name',
+    'Product name',
+    'Product name',
+    'Product name',
+    'Product name',
+    'Product name',
+    'Product name',
+    'Product name',
+    'Product name',
+    'Product name',
+    'Product name',
   ]);
 
   return (
@@ -30,7 +30,7 @@ function Search() {
         Search related words
       </h1>
       <div className="mx-auto max-w-[90rem] pt-8 pb-2 px-4 flex justify-between">
-        <div className="text-xl font-semibold hidden xl:inline-block">
+        <div className="text-xl font-medium hidden xl:inline-block">
           Filters
         </div>
         <button className="xl:hidden hover:brightness-[60%]">
