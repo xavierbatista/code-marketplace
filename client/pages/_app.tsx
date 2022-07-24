@@ -1,13 +1,13 @@
-import "../styles/globals.css";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
-import Head from "next/head";
-import { useRouter } from "next/router";
+import '../styles/globals.css';
+import Navbar from '../components/Navbar/Navbar';
+import Footer from '../components/Footer/Footer';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 function MyApp({ Component, pageProps }: any) {
   const router = useRouter();
   const showHeader =
-    router.pathname === "/sign-in" || router.pathname === "/sign-up"
+    router.pathname === '/sign-in' || router.pathname === '/sign-up'
       ? false
       : true;
 
@@ -21,8 +21,10 @@ function MyApp({ Component, pageProps }: any) {
         <title>Code Marketplace</title>
       </Head>
       {showHeader && <Navbar />}
+      {/* move this logic inside the navbar */}
       <Component {...pageProps} />
       {showHeader && <Footer />}
+      {/* move this logic inside the footer */}
     </>
   );
 }
