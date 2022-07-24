@@ -11,7 +11,7 @@ function StartSelling() {
               Code, upload, start selling
             </h1>
             <h2 className="text-base my-3 lg:my-4 text-neutral-300">
-              Made a cool library, template, or project that you wanna sell? This is the place to do it.
+              Made a cool project, library, or template that you wanna sell? This is the place to do it.
             </h2>
             <Link href="#">
               <a className="bg-red-600 rounded-md h-14 max-w-sm w-full my-6 lg:mt-10 flex items-center justify-center hover:brightness-[75%]">
