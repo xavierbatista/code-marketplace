@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap'); /* This has to be imported first */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #131313;
+}
+
+input,
+textarea,
+select,
+option {
+  background-color: white;
+  color: #000;
+  color-scheme: light;
+  outline: none;
+}
+
+@layer components {
+  .home-container {
+    @apply max-w-[90rem] mx-auto px-4 py-16 lg:py-32;
+  }
+
+  .page-center {
+    @apply max-w-[90rem] mx-auto px-4 py-8;
+  }
+
+  .clickable {
+    @apply hover:brightness-[75%] cursor-pointer;
+  }
+
+  .clickable-white {
+    @apply hover:brightness-[60%] cursor-pointer;
+  }
+
+  .big-heading {
+    @apply text-3xl font-medium;
+  }
+
+  .med-heading {
+    @apply text-lg font-medium;
+  }
+}
