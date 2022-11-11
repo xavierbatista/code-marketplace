@@ -1,4 +1,4 @@
-CREATE DATABASE code_marketplace
+CREATE DATABASE code_marketplace;
 
 CREATE TABLE items (
   id BIGSERIAL PRIMARY KEY, -- change bigserial to UUID

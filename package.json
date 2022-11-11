@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "cd ./client && yarn dev",
-    "dev2": "cd ./server && nodemon --exec go run main.go --signal SIGTERM",
+    "dev2": "cd ./server && nodemon --exec go run main.go --signal SIGTERM", 
     "push": "git add . && git commit -m \"stuff\" && git push"
   },
   "repository": {

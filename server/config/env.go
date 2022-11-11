@@ -16,7 +16,7 @@ type env struct {
 	GOOGLE_APPLICATION_CREDENTIALS string
 }
 
-//check for errors when getting variables
+// todo - check for errors when getting variables
 func NewEnv() (*env) {
 	err := godotenv.Load()
 	if err != nil {
