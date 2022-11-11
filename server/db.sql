@@ -1,7 +1,9 @@
-CREATE DATABASE code_marketplace;
+-- CREATE DATABASE code_marketplace;
+
+-- todo - index columns
 
 CREATE TABLE items (
-  id BIGSERIAL PRIMARY KEY, -- change bigserial to UUID
+  id BIGSERIAL PRIMARY KEY, -- todo - maybe change bigserial to UUID
   name VARCHAR(100) NOT NULL,
   thumbnail VARCHAR(2048) NOT NULL,
   category VARCHAR(50) NOT NULL,
@@ -37,11 +39,9 @@ CREATE TABLE cart (
   FOREIGN KEY (item_id) REFERENCES items(id)
 );
 
-DROP TABLE cart;
-DROP TABLE item_tags;
-DROP TABLE item_images;
-DROP TABLE items;
-
--- todo - index columns
-
 INSERT INTO items (name, thumbnail, category, price, creator_id, files, description) VALUES ('Cool code stuff', '/sampleThumbnails/1.png', 'JavaScript', 0.00, 'EO9GHFEWA98FAHasdf9h', 'awss3dotcom/files', 'fun coding stuff');
+
+-- DROP TABLE cart;
+-- DROP TABLE item_tags;
+-- DROP TABLE item_images;
+-- DROP TABLE items;

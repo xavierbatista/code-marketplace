@@ -6,6 +6,8 @@ import (
 	"server/structs"
 )
 
+// todo - don't use log.Fatal because it crashes the program
+
 func QueryItemsForItemCards(category string, tag string) []structs.ItemCard {
 	rows, err := config.Db.Query(`SELECT id, name, thumbnail, category, tag, price FROM items WHERE category = $1 AND tag = $2 ORDER BY purchases LIMIT 4`, category, tag)
 	if (err != nil) {
