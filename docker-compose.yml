@@ -14,7 +14,7 @@ services:
     ports:
       - '5433:5432'
     volumes:
-      - ./postgres-data:/var/lib/postgresql/data
-
+      - ./zpostgres-data:/var/lib/postgresql/data
 # go docker api cant connect to database
 # go docker needs live reload
+# make dev command to start react and docker containers
