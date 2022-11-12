@@ -1,4 +1,3 @@
-# used for development
 version: '3.8'
 services:
   client:
@@ -31,4 +30,4 @@ services:
       - '5433:5432'
     volumes:
       - ./server/zpostgres-data:/var/lib/postgresql/data
-# live reload for go and next.js
+# todo - live reload for go and next.js
