@@ -1,0 +1,11 @@
+FROM golang:alpine3.15
+
+ENV GO_ENV=development
+
+WORKDIR /app
+
+COPY . .
+
+EXPOSE 5000
+
+CMD ["go", "run", "main.go"]

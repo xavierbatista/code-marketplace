@@ -1,5 +1,7 @@
 FROM golang:alpine3.15
 
+ENV GO_ENV=production
+
 WORKDIR /app
 
 COPY . .

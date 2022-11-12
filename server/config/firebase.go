@@ -8,7 +8,9 @@ import (
 	"firebase.google.com/go/v4/auth"
 )
 
-func NewAuthClient() (*auth.Client) {
+var AuthClient *auth.Client
+
+func initAuthClient() {
 	app, err := firebase.NewApp(context.Background(), nil)
 	if err != nil {
 		log.Fatal(err)
@@ -19,5 +21,5 @@ func NewAuthClient() (*auth.Client) {
 		log.Fatal(err)
 	}
 	
-	return authClient
+	AuthClient = authClient
 }

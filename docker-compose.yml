@@ -2,7 +2,11 @@
 version: '3.8'
 services:
   server:
-    build: ./server
+    build:
+      context: ./server
+      dockerfile: Dockerfile.dev
+    # volumes:
+    #   - ./server:/home/server/app
     restart: always
     ports:
       - '5000:5000'
@@ -18,5 +22,7 @@ services:
       - '5433:5432'
     volumes:
       - ./zpostgres-data:/var/lib/postgresql/data
-# go docker needs live reload
-# consider using docker for front-end
+# mount go directory to pc
+# live reload for go
+# consider using docker for next.js
+# consider putting GO_ENV in docker-compose file and maybe deleting Dockerfile.dev

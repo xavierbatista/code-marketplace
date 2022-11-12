@@ -7,6 +7,8 @@ import (
 	"github.com/joho/godotenv"
 )
 
+var Env *env
+
 type env struct {
 	PG_HOST string
 	PG_PORT string
@@ -14,10 +16,11 @@ type env struct {
 	PG_PASSWORD string
 	PG_DATABASE string
 	GOOGLE_APPLICATION_CREDENTIALS string
+	GO_ENV string
 }
 
 // todo - check for errors when getting variables
-func NewEnv() (*env) {
+func initEnv() {
 	err := godotenv.Load()
 	if err != nil {
 		log.Fatal(err)
@@ -29,7 +32,8 @@ func NewEnv() (*env) {
 	env.PG_USER = os.Getenv("PG_USER")
 	env.PG_PASSWORD = os.Getenv("PG_PASSWORD")
 	env.PG_DATABASE = os.Getenv("PG_DATABASE")
+	env.GO_ENV = os.Getenv("GO_ENV")
 	env.GOOGLE_APPLICATION_CREDENTIALS = os.Getenv("GOOGLE_APPLICATION_CREDENTIALS")
 
-	return &env
+	Env = &env
 }
