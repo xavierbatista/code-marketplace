@@ -9,10 +9,9 @@ import (
 )
 
 func main() {
+	config.Init()
 	router := gin.Default()
 	router.Use(cors.Default()) // todo - make this only accept request from my website
-
-	config.Init() 
 
 	routes.Cart(router)
 	routes.Categories(router)

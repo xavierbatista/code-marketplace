@@ -2,3 +2,4 @@
 .env
 .env*.local
 code-marketplace-firebase-adminsdk-9nsbp-209b8ec252.json
+/zpostgres-data
