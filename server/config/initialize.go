@@ -13,7 +13,7 @@ func Init() {
 	initEnv()
 	initAuthClient()
 	
-	devConfig := fmt.Sprintf("host = %s port = %s user = %s password = %s dbname = %s sslmode = disable", Env.PG_HOST, Env.PG_PORT, Env.PG_USER, Env.PG_PASSWORD, Env.PG_DATABASE)
+	devConfig := fmt.Sprintf("host = %s port = %s user = %s password = %s dbname = %s sslmode = disable", "host.docker.internal", "5433", "postgres", "password", "code_marketplace")
 	prodConfig := "prod config here"
 
 	if (Env.GO_ENV == "production") {
