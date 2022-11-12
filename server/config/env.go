@@ -10,16 +10,10 @@ import (
 var Env *env
 
 type env struct {
-	PG_HOST string
-	PG_PORT string
-	PG_USER string
-	PG_PASSWORD string
-	PG_DATABASE string
-	GOOGLE_APPLICATION_CREDENTIALS string
 	GO_ENV string
+	GOOGLE_APPLICATION_CREDENTIALS string
 }
 
-// todo - check for errors when getting variables
 func initEnv() {
 	err := godotenv.Load()
 	if err != nil {
@@ -27,11 +21,6 @@ func initEnv() {
 	}
 
 	env := env{}
-	env.PG_HOST = os.Getenv("PG_HOST")
-	env.PG_PORT = os.Getenv("PG_PORT")
-	env.PG_USER = os.Getenv("PG_USER")
-	env.PG_PASSWORD = os.Getenv("PG_PASSWORD")
-	env.PG_DATABASE = os.Getenv("PG_DATABASE")
 	env.GO_ENV = os.Getenv("GO_ENV")
 	env.GOOGLE_APPLICATION_CREDENTIALS = os.Getenv("GOOGLE_APPLICATION_CREDENTIALS")
 
