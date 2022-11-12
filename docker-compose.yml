@@ -1,25 +1,27 @@
 # used for development
 version: '3.8'
 services:
-  # client:
-  #   build:
-  #     context: ./client
-  #     dockerfile: Dockerfile.dev
-  #   ports:
-  #     - '3000:3000'
-  #   restart: always
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile.dev
+    restart: always
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./client:/app
   server:
     build:
       context: ./server
       dockerfile: Dockerfile.dev
-    # volumes:
-    #   - ./server:/home/server/app
     restart: always
     ports:
       - '5000:5000'
+    volumes:
+      - ./server:/app
     depends_on:
-      - 'postgres_db'
-  postgres_db:
+      - 'postgres'
+  postgres:
     image: postgres:14.1-alpine
     restart: always
     environment:
@@ -29,7 +31,4 @@ services:
       - '5433:5432'
     volumes:
       - ./server/zpostgres-data:/var/lib/postgresql/data
-# mount go and next.js directory to pc
 # live reload for go and next.js
-# consider using docker for next.js
-# consider putting GO_ENV in docker-compose file and maybe deleting Dockerfile.dev

@@ -4,8 +4,6 @@ ENV GO_ENV=development
 
 WORKDIR /app
 
-COPY . .
-
 EXPOSE 5000
 
 CMD ["go", "run", "main.go"]

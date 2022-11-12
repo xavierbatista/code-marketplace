@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: any) {
     <AuthContextProvider>
       <Head>
         <meta
-          name="description" 
+          name="description"
           content="An online marketplace for developers to buy and sell code."
         />
         <title>Code Marketplace</title>
