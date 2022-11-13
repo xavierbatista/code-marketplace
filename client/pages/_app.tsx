@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: any) {
   const onDevEnvironment = process.env.NODE_ENV == 'development';
   axios.defaults.baseURL = onDevEnvironment
     ? 'http://localhost:5000/'
-    : 'https://jp4e2tbm7t.us-east-2.awsapprunner.com/';
+    : 'https://23uwxcfcvz.us-east-2.awsapprunner.com/';
 
   return (
     <AuthContextProvider>
