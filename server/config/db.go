@@ -10,7 +10,7 @@ import (
 func NewConnection(config string) (*sql.DB) { 
 	db, err := sql.Open("postgres", config)
 	if err != nil {
-		log.Fatal(err)
+		log.Panic(err)
 	}
 
 	return db

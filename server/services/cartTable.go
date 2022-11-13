@@ -5,8 +5,6 @@ import (
 	"server/config"
 )
 
-// todo - don't use log.Fatal because it crashes the program
-
 func QueryCartByUserID(userID string) *sql.Rows {
 	items, _ := config.Db.Query(`SELECT * FROM "cart" WHERE userID == $1`, userID)
 

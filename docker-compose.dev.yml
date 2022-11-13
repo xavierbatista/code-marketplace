@@ -36,4 +36,4 @@ volumes:
   zpostgres-data:
     driver_opts:
       device: './server/zpostgres-data'
-# for some reason the server doesn't restart automatically when it crashes. I should fix that. The problem is with the Watcher live reload package.
+# for some reason the server doesn't restart automatically when it crashes. The problem is with the Watcher live reload package.

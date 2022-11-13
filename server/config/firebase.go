@@ -13,12 +13,12 @@ var AuthClient *auth.Client
 func initAuthClient() {
 	app, err := firebase.NewApp(context.Background(), nil)
 	if err != nil {
-		log.Fatal(err)
+		log.Panic(err)
 	}
 
 	authClient, err := app.Auth(context.Background())
 	if err != nil {
-		log.Fatal(err)
+		log.Panic(err)
 	}
 	
 	AuthClient = authClient

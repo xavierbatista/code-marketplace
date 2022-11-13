@@ -38,7 +38,7 @@ func GetCart(c *gin.Context) {
 
 	// err := c.BindJSON(&item)
 	// if (err != nil) {
-	// 	log.Fatal(err)
+	// 	log.Panic(err)
 	// }
 
 	c.JSON(200, cart)

@@ -17,7 +17,7 @@ type env struct {
 func initEnv() {
 	err := godotenv.Load()
 	if err != nil {
-		log.Fatal(err)
+		log.Panic(err)
 	}
 
 	env := env{}
