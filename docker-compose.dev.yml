@@ -9,6 +9,8 @@ services:
       - '3000:3000'
     volumes:
       - ./client:/app
+    depends_on:
+      - 'server'
   server:
     build:
       context: ./server
@@ -29,5 +31,9 @@ services:
     ports:
       - '5433:5432'
     volumes:
-      - ./server/zpostgres-data:/var/lib/postgresql/data
-# todo - live reload for go and next.js
+      - zpostgres-data:/var/lib/postgresql/data
+volumes:
+  zpostgres-data:
+    driver_opts:
+      device: './server/zpostgres-data'
+# for some reason the server doesn't restart automatically when it crashes. I should fix that. The problem is with the Watcher live reload package.

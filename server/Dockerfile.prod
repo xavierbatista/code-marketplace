@@ -1,11 +1,11 @@
 FROM golang:alpine3.15
 
-ENV GO_ENV=production
-
 WORKDIR /app
+
+ENV GO_ENV=production
 
 COPY . .
 
-EXPOSE 5000
+# EXPOSE 5000 # I don't think this is necessary
 
 CMD ["go", "run", "main.go"]

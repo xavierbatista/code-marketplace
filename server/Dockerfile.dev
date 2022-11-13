@@ -1,9 +1,11 @@
 FROM golang:alpine3.15
 
-ENV GO_ENV=development
-
 WORKDIR /app
 
-EXPOSE 5000
+ENV GO_ENV=development
 
-CMD ["go", "run", "main.go"]
+# installs package for live reload
+RUN go install github.com/canthefason/go-watcher/cmd/watcher@latest
+
+# starts live reload
+CMD ["/go/bin/watcher"]

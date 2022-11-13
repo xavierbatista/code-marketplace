@@ -1,8 +1,7 @@
 {
   "scripts": {
     "dev": "start http://localhost:3000/ && docker compose -f docker-compose.dev.yml up",
-    "dev2": "cd ./client && yarn dev",
-    "dev3": "cd ./server && nodemon --exec go run main.go --signal SIGTERM",
+    "dev2": "docker compose -f docker-compose.dev.yml up",
     "push": "git add . && git commit -m \"stuff\" && git push"
   }
 }

@@ -8,6 +8,8 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// todo - don't use log.Fatal because it crashes the program
+
 var authClient = config.AuthClient // might cause errors idk
 
 func GetUserByEmail(c *gin.Context) (*auth.UserRecord) {
