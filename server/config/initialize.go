@@ -6,7 +6,8 @@ import (
 )
 
 var (
-	Db *sql.DB
+	DbRead *sql.DB
+	DbWrite *sql.DB
 )
 
 func Init() {
@@ -14,11 +15,14 @@ func Init() {
 	initAuthClient()
 	
 	devConfig := fmt.Sprintf("host = %s port = %s user = %s password = %s dbname = %s sslmode = disable", "host.docker.internal", "5433", "postgres", "password", "code_marketplace")
-	prodConfig := "prod config here"
+	prodConfigRead := fmt.Sprintf("host = %s port = %s user = %s password = %s dbname = %s sslmode = disable", Env.DB_READ_PROD, "5432", "postgres", "password", "code_marketplace")
+	prodConfigWrite := fmt.Sprintf("host = %s port = %s user = %s password = %s dbname = %s sslmode = disable", Env.DB_WRITE_PROD, "5432", "postgres", "password", "code_marketplace")
 
 	if (Env.GO_ENV == "production") {
-		Db = NewConnection(prodConfig)
+		DbRead = NewConnection(prodConfigRead)
+		DbWrite = NewConnection(prodConfigWrite)
 	} else {
-		Db = NewConnection(devConfig)
+		DbRead = NewConnection(devConfig)
+		DbWrite = NewConnection(devConfig)
 	}
 }
