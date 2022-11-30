@@ -10,6 +10,7 @@ import (
 
 var AuthClient *auth.Client
 
+//todo - make this connect to the dev firebase db or the prod firebase db
 func initAuthClient() {
 	app, err := firebase.NewApp(context.Background(), nil)
 	if err != nil {

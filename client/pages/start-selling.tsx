@@ -9,6 +9,7 @@ function StartSelling() {
   // disable form if not logged in
   // check number of images
   // check file types
+  // this entire file could be cleaned up
 
   const { loadingUser, user } = useAuth();
   const [tagsInput, setTagsInput] = useState('');
